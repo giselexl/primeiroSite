@@ -1,0 +1,43 @@
+body{
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.lisnavbar li{
+    display: inline;
+}
+
+li{
+    padding: 10px;
+    background: coral;
+    transition: 0.3s;
+    border-radius:  10px;;
+}
+
+li:hover{
+    background: crimson;
+    padding: 18px;
+    color: #fff;
+}
+a:hover{
+    color: #fff;
+}
+
+nav{
+    width: 100%;
+    border: 1px solid red;
+}
+
+a{
+    color: black;
+    font-style: none;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.lisnavbar{
+    border: red 1px solid;
+    width: 50%;
+    text-align: center;
+}
+

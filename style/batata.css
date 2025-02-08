@@ -1,0 +1,472 @@
+
+@font-face {
+    font-family: 'White Elephant';
+        src: url('White Elephant.ttf') format('truetype');
+    font-family: 'Moonlights on the Beach';
+        src: url('MoonLights on the Beach.ttf') format('truetype');
+
+
+}
+html {
+    background-color: rgb(248, 239, 223);
+    scroll-behavior: smooth;
+}
+
+
+.titulo {
+    color: #916037;
+    font-family: 'White Elephant', sans-serif;
+    font-size: 3.75rem; 
+    text-align: center; 
+    margin-top: 30px;
+}
+
+.naveg ul li {
+    display: inline;
+    text-align: center;
+    margin-right: 20px;
+  }
+  
+
+.naveg ul li a {
+    border: 3px solid #bb885f; 
+    border-radius: 5px; 
+    text-align: center;
+  }
+  
+.naveg ul li a:hover {
+    background-color: #bb885f; 
+    color: #fff; 
+    transition: 0.5s;
+    text-align: center;
+  }
+
+  ul.nav{
+    font-family: 'Moonlights on the Beach';
+    font-size: 3rem;
+    color: #bb885f;
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: #bb885f;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+.let{
+    font-family: 'Moonlights on the Beach';
+    color: #bb885f;
+    font-size: 3rem;
+    text-align: center;
+    
+}
+
+.cur{
+    font-family: 'Moonlights on the Beach';
+    text-align: center;
+    font-size: 3rem;
+    color: #bb885f
+}
+
+body {
+    margin: 10px;
+    padding: 0;
+    position: relative; 
+  }
+  
+.canto-direito {
+    margin-top: 30px;
+    margin-bottom:10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 25%; 
+    background-color: rgb(248, 239, 223);
+    padding: 20px; 
+    box-sizing: border-box;
+    overflow-y: auto; 
+    border-left: 5px solid #916037;
+    border-top: 5px solid #916037; 
+    border-bottom: 5px solid #916037;
+    border-right: 5px solid #916037; 
+    scroll-behavior: smooth;
+    z-index: 2;
+    
+  }   
+.canto-normal {
+    margin-top: 10px;
+    margin-bottom:10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    bottom: 0;
+    left: 0;
+    width: 70%; 
+    height: 70%;
+    background-color: rgb(248, 239, 223);
+    padding: 20px; 
+    box-sizing: border-box;
+    overflow-y: auto; 
+    scroll-behavior: smooth;
+    position: fixed;
+}
+
+  .canto-sup{
+    height:20%;
+    width: 70%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    padding: 20px;
+    background-color: rgb(248, 239, 223);
+    z-index: 1;
+  }
+
+.batatas-cur{
+    width: 70%;
+  }
+  
+  .cur-cont{
+    font-family: 'Exo 2', sans-serif;
+    color: #bb885f
+  }
+.hisp{
+    font-family: 'Exo 2', sans-serif;
+    color: #bb885f;
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+.batatarecheada{
+    width: 20%;
+    margin-right: 50px;
+    margin-left: 90px;
+  }
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+::-webkit-scrollbar-track {
+    background: rgb(250, 244, 234);
+  }
+  
+::-webkit-scrollbar-thumb {
+    background: #bb885f;
+  }
+
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #774e2c;
+  }
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    margin: auto;
+    width: 100%;
+} 
+img.item_batrec1, img.item_batrec2, img.item_batrec3{
+  width: 100%;
+  border-radius: 8px; 
+}
+
+#carrossel{    
+  overflow: hidden; 
+  width: 60%;
+  margin: auto;
+}
+
+
+.item_seta{
+    width:30%;
+    cursor: pointer;
+  }
+  
+
+#destaque{
+  display: flex;
+  width: 100%;
+  transition: all 500ms ease;
+}
+
+#carrossel1{    
+  overflow: hidden; 
+  width: 60%;
+  margin: auto;
+}
+
+
+.item_seta1{
+    width:30%;
+    cursor: pointer;
+  }
+  
+
+#destaque1{
+  margin-top: 10px;
+  display: flex;
+  width: 100%;
+  transition: all 500ms ease;
+}
+.item_batrec {
+  flex: none;  
+  width: 100%;
+}
+
+
+.batata-table {
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 8px; 
+  font-family: 'Exo 2', sans-serif;
+  color: #bb885f;
+}
+.batata-table th {
+  background-color: #e9b68c; 
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Exo 2', sans-serif;
+  color:#774e2c;
+}
+
+.batata-table td {
+  border: 1px solid #bb885f; /* Cor das bordas das células */
+  padding: 20px;
+}
+
+.batata-table th:first-child,
+.batata-table td:first-child {
+  border-top-left-radius: 8px;
+}
+
+.batata-table th:last-child,
+.batata-table td:last-child {
+  border-top-right-radius: 8px;
+}
+
+.batata-table td:last-child {
+  border-bottom-right-radius: 8px;
+}
+
+.batata-table td:first-child {
+  border-bottom-left-radius: 8px;
+}
+
+ul{
+  list-style-type: disc; 
+  font-family: 'Exo 2', sans-serif;
+  color: #bb885f;
+  text-align: justify;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+ol{
+  font-family: 'Exo 2', sans-serif;
+  color: #bb885f;
+  text-align: justify;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+p.inov, .inov1, .inov2{
+  font-family: 'Exo 2', sans-serif;
+  color: #bb885f;
+  text-align: justify;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.batino{
+  width: 30%;
+}
+.batino{
+  transition: transform 2s;
+}
+.batino:hover  {
+  transform: rotate(-4deg);
+}
+footer {
+  color: #a06e45;
+  background-color: #e9b68c; 
+  padding: 5px;
+  font-family: 'Exo 2', sans-serif;
+  text-align: center;
+}
+
+
+.let1{
+  font-family: 'Moonlights on the Beach';
+    color: #bb885f;
+    font-size: 2.60rem;
+    text-align: center;
+
+  }
+
+@-moz-document url-prefix() {
+  ul.nav{
+    font-family: 'Cookie', cursive;
+    font-size: 3rem;
+    color: #bb885f;
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    text-align: center;
+}
+.let1{
+  font-family: 'Cookie', cursive;
+    color: #bb885f;
+    font-size: 2.60rem;
+    text-align: center;
+
+  }
+  .cur{
+    font-family: 'Cookie', cursive;
+    text-align: center;
+    font-size: 3rem;
+    color: #bb885f
+}
+.let{
+  font-family: 'Cookie', cursive;
+  color: #bb885f;
+  font-size: 3rem;
+  text-align: center;
+  
+}
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .canto-direito {
+      display: none;
+    }   
+  .canto-normal {
+      background-color: rgb(248, 239, 223);
+      box-sizing: border-box;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      height: 75%;
+      width: 100%;
+      z-index: 1;
+      margin-left: 10px;
+      margin-right: 10px;
+  
+    }   
+    .canto-sup{
+      height: 22%;
+      width: 100%;
+      top: 0;
+      right: 0;
+      margin-top: 2px;
+      background-color: rgb(248, 239, 223);
+      z-index: 2;
+      text-align: center;   
+      margin-right: 30px;
+    }
+    .hisp{
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    p.inov, .inov1, .inov2{
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+   
+    .titulo {
+      color: #916037;
+      font-family: 'White Elephant', sans-serif;
+      font-size: 3rem; 
+      text-align: center;
+      margin-right:30px; 
+  }
+  
+  .naveg ul li {
+      display: inline;
+      text-align: center;
+      margin-right: 30px;
+    }
+    
+  
+  .naveg ul li a {
+      border: 3px solid #bb885f; 
+      border-radius: 5px; 
+      text-align: center;
+    }
+    
+  .naveg ul li a:hover {
+      background-color: #bb885f; 
+      color: #fff; 
+      transition: 0.5s;
+      text-align: center;
+    }
+  
+    ul.nav{
+      font-family: 'Moonlights on the Beach';
+      font-size: 2rem;
+      color: #bb885f;
+      list-style-type: none;
+      margin:0;
+      padding: 0;
+      text-align: center;
+    }
+    ul{
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    ol{
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    @-moz-document url-prefix() {
+      ul.nav{
+        font-family: 'Cookie', cursive;
+        font-size: 2rem;
+        color: #bb885f;
+        list-style-type: none;
+        margin:0;
+        padding: 0;
+        text-align: center;
+    }
+    .let1{
+      font-family: 'Cookie', cursive;
+        color: #bb885f;
+        font-size: 2.5rem;
+        text-align: center;
+    
+      }
+      .cur{
+        font-family: 'Cookie', cursive;
+        text-align: center;
+        font-size: 2.5rem;
+        color: #bb885f
+    }
+    .let{
+      font-family: 'Cookie', cursive;
+      color: #bb885f;
+      font-size: 2.5rem;
+      text-align: center;
+      
+    }
+    .titulo {
+      color: #916037;
+      font-family: 'White Elephant', sans-serif;
+      font-size: 2.70rem; 
+      text-align: center;
+      margin-right:30px; 
+  }
+  
+    
+    
+    }
+    
+  }
